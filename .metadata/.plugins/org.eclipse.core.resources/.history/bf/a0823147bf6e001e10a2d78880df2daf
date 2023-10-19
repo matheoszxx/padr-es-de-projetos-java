@@ -1,0 +1,26 @@
+package one.digitalinnovation.gof;
+/**
+ * 
+ * Singleton "preguiçoso"
+ * 
+ */
+
+public class SingletonEager {
+	//singleton preguiçoso ele não disponibiliza a instancia pro usuario
+	private static SingletonEager instancia;
+	
+	//tem que ser private para ninguem instanciar 
+	private SingletonEager() {
+		super();
+	}
+	
+	//garantindo que essa instancia vai ser exposta pra quem ta chamando
+	public static SingletonEager getInstancia() {
+		if (instancia == null) {
+			//se ela for nula, instanciamos ela para poder retornar
+			instancia = new SingletonEager();
+		}
+		return instancia;
+	}
+
+}
