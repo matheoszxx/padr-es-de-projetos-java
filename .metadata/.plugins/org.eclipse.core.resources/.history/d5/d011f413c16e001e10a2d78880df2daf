@@ -16,6 +16,10 @@ public class SingletonEager {
 	
 	
 	public static SingletonEager getInstancia() {
+		if (instancia == null) {
+			
+			instancia = new SingletonEager();
+		}
 		return instancia;
 	}
 
