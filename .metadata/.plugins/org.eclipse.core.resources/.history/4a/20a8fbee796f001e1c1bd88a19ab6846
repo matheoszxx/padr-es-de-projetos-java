@@ -1,0 +1,15 @@
+package one.digitalinnovation.gof.facade;
+
+/**
+ * A ideia da Facade é que seja uma interface e que dentro dela realize operações para podermos consolidar ou expor
+ * uma interface mais simples para algo mais complexo 
+ * 
+ */	
+
+public class Facade {
+	
+	//interface de uso da facade
+	public void migrarCliente(String nome, String cep) {
+		
+	}
+}

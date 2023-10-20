@@ -1,0 +1,28 @@
+package subsistema2.cep;
+
+import one.digitalinnovation.gof.singleton.SingletonEager;
+
+public class CepApi {
+	
+	//o Singleton apressado ele já atribui logo a instancia 
+	private static CepApi instancia = new CepApi();
+		
+		
+	private CepApi() {
+		super();
+	}
+		
+	//então a instancia já é logo acionada 
+	public static CepApi getInstancia() {
+		return instancia;
+	}
+	
+	public String recuperarCidade(String cep) {
+		return "Araraquara";
+	}
+	
+	public String recuperarEstado(String cep) {
+		return "SP";
+	}
+
+}
