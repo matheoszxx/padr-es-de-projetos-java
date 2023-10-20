@@ -1,6 +1,6 @@
-package test;
+package one.digitalinnovation.gof;
 
-public class javaTeste {
+public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
